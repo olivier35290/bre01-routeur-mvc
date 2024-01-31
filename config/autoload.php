@@ -1,5 +1,5 @@
 <?php
 
-require '../controllers/PageController.php';
-require '../config/Router.php';
+require 'controllers/PageController.php';
+require 'Router.php';
 ?>

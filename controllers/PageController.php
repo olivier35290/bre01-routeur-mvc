@@ -1,28 +1,34 @@
 <?php
 
-class PageController
-{
-    public function home(): void
+class PageController {
+    
+    public function __construct()
     {
-        $route = 'home';
-        require 'templates/layout.phtml';
     }
-
-    public function about(): void
+    
+    public function home() : void
     {
-        $route = 'about';
-        require 'templates/layout.phtml';
+        $route = "home";
+        require "templates/layout.phtml";
     }
-
-    public function contact(): void
+    
+    public function about() : void
     {
-        $route = 'contact';
-        require 'templates/layout.phtml';
+        $route = "about";
+        require "templates/layout.phtml";
     }
-
-    public function notFound(): void
+    
+    public function contact() : void
     {
-        $route = '404';
-        require 'templates/layout.phtml';
+        $route = "contact";
+        require "templates/layout.phtml";
     }
+    
+    public function error404() : void
+    {
+        $route = "404";
+        require "templates/layout.phtml";
+    }
+    
+    
 }

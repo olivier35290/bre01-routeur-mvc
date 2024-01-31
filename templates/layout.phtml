@@ -15,13 +15,13 @@
         </nav>
     </header>
     <?php
-        if ($route = 'home') {
+        if ($route === 'home') {
             require 'home.phtml';
-        } elseif ($route = 'about') {
+        } else if ($route === 'about') {
             require 'about.phtml';
-        } elseif ($route = 'notFound') {
+        } else if ($route === '404') {
             require '404.phtml';
-        } elseif ($route = 'contact') {
+        } else if ($route === 'contact') {
             require 'contact.phtml';
         }
     ?>
